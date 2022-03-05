@@ -7,12 +7,12 @@ $config = [
 	'id' => 'basic',
 	'basePath' => dirname(__DIR__),
 	'bootstrap' => ['log'],
-	'on beforeRequest' => function () {
-		var_dump('from before Request');
-		Yii::$app->on(\yii\web\Controller::EVENT_BEFORE_ACTION, function () {
-//			var_dump('controller before action on methed');
-		});
-	},
+//	'on beforeRequest' => function () {
+//		var_dump('from before Request');
+//		Yii::$app->on(\yii\web\Controller::EVENT_BEFORE_ACTION, function () {
+////			var_dump('controller before action on methed');
+//		});
+//	},
 	'aliases' => [
 		'@bower' => '@vendor/bower-asset',
 		'@npm' => '@vendor/npm-asset',
@@ -66,10 +66,11 @@ $config = [
 //		]
 		'test' => function () {
 			return new app\components\TestComponent();
-		}
-	],
-	'params' => $params,
+		},
+        'assest'
 
+    ],
+	'params' => $params,
 ];
 
 if (YII_ENV_DEV) {
