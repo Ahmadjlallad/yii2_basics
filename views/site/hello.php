@@ -5,7 +5,7 @@
 
 echo $msg;
 ?>
-<img src="/web/assets/images/Screenshot%20from%202022-03-01%2016-28-01.png" alt="">
+<img src="/web/images/Screenshot%20from%202022-03-01%2016-28-01.png" alt="">
 <pre>
     entry script represent yii file which act like bootstrap for the files and its create the application instate
     application can have multiple component and its singletons
